@@ -1,0 +1,41 @@
+{% extends 'myapp/layout.html' %}
+
+{% block content %}
+<section class="how-it-works">
+    <div class="container">
+        <div class="steps-container">
+            <h2>How Our Service Works</h2>
+            <div class="all-steps">
+                <div class="step">
+                    <img src="/static/images/step1.png" alt="Find Parking">
+                    <h3>Find Convenient Parking</h3>
+                    <p>Enter your destination, compare rates, and select the best parking spot in advance.</p>
+                </div>
+                <div class="step">
+                    <img src="/static/images/step2.png" alt="Reserve Parking">
+                    <h3>Reserve In Advance</h3>
+                    <p>Secure your spot by paying through our app. Keep business and personal payments separate.</p>
+                </div>
+                <div class="step">
+                    <img src="/static/images/step3.png" alt="Expense Tracking">
+                    <h3>Expense Management</h3>
+                    <p>Forward receipts instantly, add memos, and track your parking expenses efficiently.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="" alt="Workflow Image">
+        </div>
+    </div>
+</section>
+
+     <footer class="footer">
+        <div class="footer-content">
+              <div class="media-icons">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+        </div>
+    </footer>
+{% endblock %}
