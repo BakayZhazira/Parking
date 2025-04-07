@@ -1,41 +1,232 @@
 {% extends 'myapp/layout.html' %}
 
+{% block title %}B2B Партнерство | Smart Parking{% endblock %}
+
 {% block content %}
-<section class="how-it-works">
-    <div class="container">
-        <div class="steps-container">
-            <h2>How Our Service Works</h2>
-            <div class="all-steps">
-                <div class="step">
-                    <img src="/static/images/step1.png" alt="Find Parking">
-                    <h3>Find Convenient Parking</h3>
-                    <p>Enter your destination, compare rates, and select the best parking spot in advance.</p>
+<section class="b2b-container">
+    <div class="b2b-content">
+        <div class="b2b-header">
+            <h1>B2B Решения для парковочного бизнеса</h1>
+            <p class="subtitle">Комплексная платформа для увеличения доходов от парковочных пространств</p>
+        </div>
+
+
+
+            <div class="benefit-item">
+                <div class="benefit-content">
+                    <h3><i class="fas fa-chart-line"></i> Рост доходов</h3>
+                    <p>Увеличьте заполняемость парковок на 30-50% за счет подключения к нашей сети бронирования через Telegram-бота и мобильное приложение</p>
                 </div>
-                <div class="step">
-                    <img src="/static/images/step2.png" alt="Reserve Parking">
-                    <h3>Reserve In Advance</h3>
-                    <p>Secure your spot by paying through our app. Keep business and personal payments separate.</p>
+            </div>
+
+
+            <div class="benefit-item">
+                <div class="benefit-content">
+                    <h3><i class="fas fa-money-bill-wave"></i> Прозрачные выплаты</h3>
+                    <p>Автоматизированная система расчетов с детализированной отчетностью. Выплаты по вашему графику - ежедневно, еженедельно или ежемесячно.</p>
                 </div>
-                <div class="step">
-                    <img src="/static/images/step3.png" alt="Expense Tracking">
-                    <h3>Expense Management</h3>
-                    <p>Forward receipts instantly, add memos, and track your parking expenses efficiently.</p>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-content">
+                    <h3><i class="fas fa-bullhorn"></i> Маркетинговая поддержка</h3>
+                    <p>Ваши парковки продвигаются через наши каналы: Telegram-бот, сайт и партнерские ресурсы.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-content">
+                    <h3><i class="fas fa-headset"></i> Круглосуточная поддержка</h3>
+                    <p>Техническая и клиентская поддержка 24/7 для вас и ваших клиентов. Решаем любые вопросы в минимальные сроки.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-content">
+                    <h3><i class="fas fa-rocket"></i> Аналитика и оптимизация</h3>
+                    <p>Детальная аналитика загрузки парковок и финансовых показателей. Персональные рекомендации по увеличению доходов.</p>
                 </div>
             </div>
         </div>
-        <div class="image-container">
-            <img src="" alt="Workflow Image">
+
+        <div class="b2b-cta">
+            <h2>Начните зарабатывать больше уже сегодня</h2>
+            <p>Подключите свои парковочные пространства к крупнейшей сети онлайн-бронирования</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-button primary">Стать партнером</a>
+            </div>
         </div>
     </div>
 </section>
 
-     <footer class="footer">
-        <div class="footer-content">
-              <div class="media-icons">
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Smart Parking. Все права защищены.</p>
     </div>
-        </div>
-    </footer>
+</footer>
+
+<style>
+    /* Основные стили */
+    .b2b-container {
+        background: #f8f9fa;
+        padding: 80px 0;
+    }
+
+    .b2b-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .b2b-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .b2b-header h1 {
+        color: #28BBCB;
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .b2b-header .subtitle {
+        color: #666;
+        font-size: 1.3rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+
+    .benefit-item {
+        padding: 40px;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background 0.3s;
+    }
+
+    .benefit-item:last-child {
+        border-bottom: none;
+    }
+
+    .benefit-item:hover {
+        background: #f9f9f9;
+    }
+
+    .benefit-content h3 {
+        color: #420059;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .benefit-content h3 i {
+        color: #28BBCB;
+        margin-right: 15px;
+        font-size: 1.8rem;
+        width: 40px;
+        text-align: center;
+    }
+
+    .benefit-content p {
+        color: #555;
+        line-height: 1.7;
+        font-size: 1.1rem;
+        padding-left: 55px;
+    }
+
+    /* Призыв к действию */
+    .b2b-cta {
+        text-align: center;
+    }
+
+    .b2b-cta h2 {
+        color: #420059;
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .b2b-cta p {
+        color: #666;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 16px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s;
+    }
+
+    .cta-button.primary {
+        background: #28BBCB;
+        color: white;
+    }
+
+    .cta-button.primary:hover {
+        background: #1fa5b5;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(40, 187, 203, 0.3);
+    }
+
+
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+        .b2b-container {
+            padding: 50px 0;
+        }
+
+        .b2b-header h1 {
+            font-size: 2.2rem;
+        }
+
+        .benefit-item {
+            padding: 30px 20px;
+        }
+
+        .benefit-content h3 {
+            font-size: 1.3rem;
+        }
+
+        .benefit-content p {
+            font-size: 1rem;
+            padding-left: 45px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .b2b-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .cta-button {
+            width: 100%;
+        }
+    }
+</style>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 {% endblock %}

@@ -16,8 +16,12 @@
         <label for="check" class="menu-icon">&#9776;</label>
         <nav class="navigation">
             <label for="check" class="close-btn">&times;</label>
+            <a href="{% url 'index' %}">Home</a>
             <a href="{% url 'about' %}">About</a>
-            <a href="{% url 'contact' %}">Services</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'chat' %}">Chat</a>
+
+
         </nav>
     </header>
     {% block content %}{% endblock %}
@@ -25,8 +29,8 @@
 
     <div class="media-icons">
         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.instagram.com/smart_parking_tg?igsh=dGxxMThlM3JjcHZu"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/kata_parking_bot"><i class="fa-brands fa-telegram"></i></a>
     </div>
 </body>
 </html>

@@ -1,25 +1,99 @@
 {% extends 'myapp/layout.html' %}
 
-{% block title %}About{% endblock %}
+{% block title %}Как мы работаем{% endblock %}
 
 {% block content %}
-      <div class="content">
+<section>
+    <div class="content">
         <div class="info">
             <h2>Smart Parking -</h2>
             <h1>Поиск парковки в Telegram</h1>
-
         </div>
     </div>
 
+    <!-- Секция "Как мы работаем" -->
+    <div class="how-we-work">
+        <h2 class="work-title">Как мы работаем</h2>
+        <div class="work-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Поиск парковки</h3>
+                <p>Пользователь вводит местоположение или выбирает параметры для поиска ближайших парковок</p>
+            </div>
 
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Информация о парковке</h3>
+                <p>Бот отображает данные о парковочных местах: адрес, стоимость, доступность</p>
+            </div>
 
-    <footer class="footer">
-        <div class="footer-content">
-              <div class="media-icons">
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
-    </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-icon">
+                    <i class="fas fa-file-signature"></i>
+                </div>
+                <h3>Подтверждение</h3>
+                <p>После оплаты бот отправляет подтверждение и информацию о времени начала парковки</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h3>Получение доступа</h3>
+                <p>После оплаты вы получаете доступ к парковочному месту</p>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <!-- Кнопка для перехода в бота -->
+    <div class="try-bot-container">
+        <a href="https://t.me/kata_parking_bot" class="try-bot-btn">
+            <i class="fab fa-telegram"></i>Начать поиск парковки</a>
+    </div>
+
+    <section class="benefits-section">
+        <h2>Наши преимущества</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Удобство и простота использования</h3>
+                <p>Быстрый и интуитивно понятный интерфейс для поиска парковки прямо в Telegram</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Широкий выбор парковок</h3>
+                <p>Доступ к тысячам парковочных мест в вашем городе, с возможностью фильтровать по цене, доступности и типу парковки</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-percentage"></i>
+                <h3>Оплата через бот</h3>
+                <p>Удобная и безопасная оплата парковки прямо через Telegram, без необходимости выходить из приложения</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-headset"></i>
+                <h3>Экономия времени</h3>
+                <p>Найдите свободное место за считанные секунды и забудьте о поисках парковки в последний момент</p>
+            </div>
+        </div>
+    </section>
+
+
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Smart Parking. Все права защищены.</p>
+    </div>
+</footer>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 {% endblock %}
