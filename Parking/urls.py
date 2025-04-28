@@ -9,3 +9,5 @@ urlpatterns = [
     path('', include('myapp.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+"""
+"""

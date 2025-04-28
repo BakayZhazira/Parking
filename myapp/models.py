@@ -9,3 +9,6 @@ class ChatMessage(models.Model):
 
     def __str__(self):
         return f"{'Bot' if self.is_bot else self.user.username}: {self.message}"
+
+    """
+    """
